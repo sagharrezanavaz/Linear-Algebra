@@ -1,4 +1,5 @@
-# Part 1 In this project, we implement a classification algorithm for the famous **Iris Flower Dataset**, learning key concepts in data manipulation, vectorized computations, and machine learning basics.
+# Part 1 
+In this project, we implement a classification algorithm for the famous **Iris Flower Dataset**, learning key concepts in data manipulation, vectorized computations, and machine learning basics.
 
 ## Project Overview
 
