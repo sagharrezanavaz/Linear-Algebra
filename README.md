@@ -58,6 +58,7 @@ Finally, we compare predicted labels with ground truth to calculate accuracy.
 ### Output:
 
 The kNN classifier achieves **100% accuracy** on the test dataset.
+In the end we have utilized this classifier for image processing purposes and experimented with different k values.
 
 ## Results
 
@@ -66,6 +67,7 @@ This project demonstrates:
 - Efficient data processing with NumPy.
 - Basics of machine learning, including training and testing datasets.
 - Hyperparameter tuning with the `k` value.
+- Image processing.
 
 
 
