@@ -153,3 +153,35 @@ Part 2/
 
 ---
 
+
+
+
+# Word Embeddings with GloVe and Co-occurrence Matrix
+
+This notebook explores word embeddings using the pre-trained GloVe model and by creating embeddings from a co-occurrence matrix.
+
+## 1. GloVe: Global Vectors for Word Representation
+
+- **Exploring word vectors:** We examined how GloVe embeddings capture semantic relationships between words, such as gender and royalty.
+- **Visualizing in 2-D:** We used PCA and t-SNE to reduce the dimensionality of GloVe embeddings and visualize relationships between words like "tall," "taller," and "tallest" in a 2D space. The visualizations showed how semantically similar words tend to cluster together in the reduced-dimensional space.
+
+## 2. Evaluation
+
+- **Cosine similarity:** We used cosine similarity to measure the semantic similarity between word vectors, such as "france" and "paris." We found that words with similar meanings have higher cosine similarity scores.
+- **Analogy test:** We evaluated the GloVe model's ability to solve word analogies using a small test set. The model achieved an accuracy of approximately 0.6 (or 60%), indicating its ability to capture some analogical relationships between words.
+
+## 3. Learn embeddings
+
+- **Dataset Preprocessing:** We preprocessed a Simpsons dataset, cleaning the text data by removing stop words, lemmatizing words, and filtering tokens. This prepared the data for creating word embeddings.
+- **Tokenization and Phrase Detection:** We tokenized the cleaned sentences and detected common bigrams using Gensim's Phrases and Phraser tools. This allowed us to capture multi-word expressions as single units in the embeddings.
+- **Co-occurrence Matrix:** We built a co-occurrence matrix to analyze word relationships based on their co-occurrence within a context window. The matrix stored the frequency of word pairs appearing together within a specified window size.
+- **SVD:** We applied Singular Value Decomposition (SVD) to reduce the dimensionality of the co-occurrence matrix, creating word embeddings. This reduced the size of the embeddings while preserving important semantic information.
+- **Similarity:** We calculated cosine similarity between the learned embeddings to find similar and dissimilar words. We observed that the learned embeddings captured semantic relationships between words, as similar words had higher cosine similarity scores. We also explored word analogies using vector arithmetic, finding that the embeddings could to some extent represent analogical relationships.
+
+
+## 4. Sentiment Analysis of MDB Movie Reviews 
+
+## Summary
+
+This notebook demonstrates the use of pre-trained word embeddings (GloVe) and the process of creating word embeddings from a co-occurrence matrix. It covers data preprocessing, tokenization, phrase detection, co-occurrence matrix construction, dimensionality reduction using SVD, and similarity analysis. The notebook shows how word embeddings can capture semantic relationships between words and be used for tasks like word similarity and analogy detection.
+
